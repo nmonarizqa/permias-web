@@ -13,7 +13,8 @@ body {
     margin-top: 0;
     font-family: 'europa', 'Raleway', Helvetica, sans-serif;
     font-size: 16px;
-    background: url('../img/tile.jpg') top left repeat;
+    /*background: url('../img/tile.jpg') top left repeat;*/
+    background: whitesmoke;
 }
 
 
@@ -60,7 +61,8 @@ a:visited {
     color: #edb021;
 }
 
-a:hover {
+a:hover,
+.widget ul li a:hover {
     text-decoration: none;
     color: #edb021;
     font-weight: bold;
@@ -72,7 +74,7 @@ input,
 a.btn {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeSpeed;
-    color: #171813;
+    color: #2a2a2a;
 }
 
 .btn {
@@ -86,6 +88,25 @@ button.btn:focus {
 .btn-success {
     background: #edb021;
     border: none;
+}
+
+.btn-read-more {
+    background: transparent;
+    border: 2px solid #a42102;
+    color: #a42102;
+    border-radius: 0;
+}
+
+a.btn-read-more {
+    color: #a42102;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+}
+
+.btn-read-more:hover {
+    background: #a42102;
+    color: white;
 }
 
 .btn-success:hover {
@@ -134,6 +155,11 @@ img {
     color: white;
 }
 
+.badge.social.widget {
+    background: transparent;
+    color: #2a2a2a;
+}
+
 .badge.social:hover {
     color: white;
 }
@@ -148,6 +174,10 @@ img {
 
 .badge.social.instagram:hover {
     background: #8a3ab9;
+}
+
+.badge.social.youtube:hover {
+    background: #a42102;
 }
 
 blockquote {
@@ -167,11 +197,15 @@ blockquote:before {
     display: none;
 }
 
+.sidebar {
+    padding: 20px 0 0 40px;
+}
+
 
 /* HERO */
 
 #hero {
-    background: linear-gradient( rgba(20, 20, 20, .8), rgba(20, 20, 20, .8)), url('../img/street.jpg') center center no-repeat fixed;
+    background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .6)), url('../img/street.jpg') center center no-repeat fixed;
     min-height: 100vh;
     /*height: 0;*/
     -webkit-background-size: cover;
@@ -222,6 +256,34 @@ section h3 {
     margin: 20px 0 10px;
 }
 
+#primary {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.feature-image {
+    display: table;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.feature-image-default {
+    background: url('../img/brooklyn.jpg') no-repeat;
+    background-size: cover;
+}
+
+.feature-image-default-alt {
+    background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .6)), url('../img/skyline3.jpg') no-repeat;
+    background-size: cover;
+}
+
+.feature-image h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+
 #about {
     background: #2a2a2a;
     padding: 20px 0;
@@ -238,10 +300,6 @@ section h3 {
 
 #about a:hover {
     font-weight: bold;
-}
-
-#latest-updates {
-    background: #e5e5e5;
 }
 
 #latest-updates .thumbnail {
@@ -266,8 +324,10 @@ section h3 {
 }
 
 #upcoming-events {
-    /*background: linear-gradient( rgba(200, 200, 200, .7), rgba(200, 200, 200, .7)), url('../img/skyline.jpg') 100% 100% repeat fixed;*/
+    background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .6)), url('../img/skyline.jpg') 100% 100% repeat fixed;
+    /*background: url('../img/tile.jpg') top left repeat;*/
     text-align: center;
+    color: white;
 }
 
 #upcoming-events .num {
@@ -306,7 +366,6 @@ section h3 {
 
 #akar {
     padding: 0;
-    background: #e5e5e5;
 }
 
 #akar h2 {
@@ -327,6 +386,21 @@ section h3 {
 
 #signup .btn {
     font-size: 24px;
+}
+
+#featurette {
+    background: linear-gradient( rgba(20, 20, 20, .7), rgba(20, 20, 20, .7)), url('../img/queensboro.jpg') 100% 100% no-repeat fixed;
+    color: white;
+    /*-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;*/
+    background-size: cover;
+    min-width: 100vh;
+}
+
+#featurette h2 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 footer {
@@ -400,6 +474,181 @@ i.ci {
 
 .ci.ci-device {
     background-position: -200px 0;
+}
+
+
+/* BLOG */
+
+.post,
+.widget,
+#comments {
+    position: relative;
+    margin: 0 0 40px
+}
+
+.post {
+    border-bottom: solid 1px #ddd;
+}
+
+.post header,
+.post .post-excerpt,
+.post .post-body,
+#comments .comments-wrap {
+    padding: 30px;
+    padding-left: 0px;
+}
+
+.post header {
+    text-align: center;
+}
+
+.post header h1,
+.post header h3 {
+    font-size: 30px;
+    margin: 10px 0 15px;
+    color: #2a2a2a;
+}
+
+.post header h1 {
+    border-bottom: solid 1px #ddd;
+}
+
+.post header h3 a {
+    color: #2a2a2a;
+}
+
+.post-image {
+    height: auto;
+}
+
+.post-meta,
+.post-details,
+.post-details a {
+    color: #777777
+}
+
+.post-cat>a {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.post-details {
+    font-size: 12px;
+}
+
+.post-details i.fa {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.post-details i.fa:first-child {
+    padding-left: 0;
+}
+
+
+/* WIDGET */
+
+.widget h4,
+.widget h5 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.widget h4 {
+    margin: 0 0 30px;
+    padding: 10px;
+    background: #2a2a2a;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget h5,
+.widget-categories ul li {
+    padding-bottom: 10px;
+    border-bottom: solid 1px #cccccc;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.widget ul li {
+    margin: 0 0 5px;
+}
+
+.widget ul li a {
+    color: #2a2a2a;
+}
+
+.widget-subscribe {
+    padding: 20px;
+    background: #e2e2e2;
+}
+
+.widget-subscribe form p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.widget-recent-posts ul li {
+    margin-bottom: 30px;
+}
+
+.widget-recent-posts ul li:last-child {
+    margin-bottom: 60px;
+}
+
+.widget-recent-posts img {
+    vertical-align: baseline;
+    display: list-item;
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+    vertical-align: baseline;
+}
+
+.widget-categories ul li {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.widget-social {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* FORMS */
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+    color: #666;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 12px;
 }
 
 
