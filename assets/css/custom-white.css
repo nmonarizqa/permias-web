@@ -429,7 +429,6 @@ section h3 {
     -moz-background-size: cover;
     -o-background-size: cover;*/
     background-size: cover;
-    min-width: 100vh;
 }
 
 #featurette h2 {
@@ -534,6 +533,11 @@ i.ci {
 
 .members p {
     color: #777;
+    font-size: 0.8em;
+}
+
+.members span {
+    font-size: 0.9em;
 }
 
 
