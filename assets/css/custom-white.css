@@ -287,7 +287,7 @@ section h3 {
     background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .6)), url('../img/plenary.jpg') no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center 300%;
+    background-position: center 50%;
 }
 
 .feature-image-akar {
@@ -733,6 +733,15 @@ textarea {
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
+}
+
+.cropped {
+    height: 200px;
+    overflow: hidden;
+}
+
+.cropped img {
+    margin-top: -10px;
 }
 
 
