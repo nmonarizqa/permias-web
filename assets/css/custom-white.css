@@ -287,13 +287,19 @@ section h3 {
     background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .6)), url('../img/plenary.jpg') no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center 320%;
+    background-position: center 300%;
 }
 
 .feature-image-akar {
     background: linear-gradient( rgba(20, 20, 20, .4), rgba(20, 20, 20, .4)), url('../img/akar-banner.png') no-repeat;
     background-size: cover;
     background-position: center 100%;
+}
+
+.feature-image-contact {
+    background: linear-gradient( rgba(20, 20, 20, .4), rgba(20, 20, 20, .4)), url('../img/contact.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .feature-image h1 {
@@ -502,6 +508,32 @@ i.ci {
 
 .ci.ci-device {
     background-position: -200px 0;
+}
+
+
+/* ABOUT */
+
+#about-member,
+#donate {
+    background: #eeeeee;
+}
+
+#about-member img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.members {
+    padding: 15px
+}
+
+.members h4 {
+    margin: 5px 0 5px;
+}
+
+.members p {
+    color: #777;
 }
 
 
