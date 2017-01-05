@@ -162,6 +162,7 @@ img {
 
 .badge.social:hover {
     color: white;
+    background: #2a2a2a;
 }
 
 .badge.social.twitter:hover {
@@ -285,9 +286,14 @@ section h3 {
 
 .feature-image-about {
     background: linear-gradient( rgba(20, 20, 20, .6), rgba(20, 20, 20, .6)), url('../img/plenary.jpg') no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-position: center 50%;
+}
+
+.feature-image-events {
+    background: linear-gradient( rgba(20, 20, 20, .4), rgba(20, 20, 20, .4)), url('../img/header.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 100%;
 }
 
 .feature-image-akar {
@@ -414,7 +420,9 @@ section h3 {
     letter-spacing: 0;
 }
 
-#akar h2 strong {
+#akar h2 strong,
+#contact strong,
+.caption p strong {
     border-bottom: solid 2px #a42102;
 }
 
@@ -722,8 +730,17 @@ textarea {
     text-align: center;
 }
 
+#akar-instructor .row {
+    padding-bottom: 20px;
+}
+
 #akar-activities {
     background: #e2e2e2;
+}
+
+#akar-activities h3 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #777;
 }
 
 
@@ -744,11 +761,61 @@ textarea {
     overflow: hidden;
 }
 
-.cropped img {
-    margin-top: -10px;
+
+/* EVENTS */
+
+.event-section {
+    padding-top: 0;
+    padding-bottom: 20px;
 }
 
+.center-cropped {
+    height: 250px;
+    overflow: hidden;
+    padding: 20px 10px 10px 10px;
+}
 
+.grey-bg {
+    background: #e2e2e2;
+}
+
+#regular-events h3 {
+    background: #a42102;
+    color: white;
+    display: inline;
+    font-size: 26px;
+    padding: 5px;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+#regular-events span {
+    font-weight: bold;
+    display: inline;
+    background: #edb021;
+}
+
+#event-akar {
+    background: url('../img/akar3.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#jamming {
+    background: url('../img/jamming.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#potw {
+    background: url('../img/potw.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#nyidstory {
+    background: url('../img/nyidstory.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+​
 /* MEDIA QUERIES */
 
 @media screen and ( max-width:991px) {
