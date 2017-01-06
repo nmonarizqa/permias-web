@@ -247,6 +247,7 @@ section {
 
 .section-header {
     text-align: center;
+    text-transform: uppercase;
 }
 
 section h2 {
@@ -365,7 +366,7 @@ section h3 {
     color: white;
 }
 
-#upcoming-events .num {
+.num {
     display: table;
     font-size: 24px;
     font-weight: bold;
@@ -384,12 +385,12 @@ section h3 {
     margin: 10px;
 }
 
-#upcoming-events .num .num-content {
+.num .num-content {
     display: table-cell;
     vertical-align: middle;
 }
 
-#upcoming-events .num span {
+.num span {
     display: block;
     font-size: 20px;
     font-weight: normal;
@@ -422,8 +423,20 @@ section h3 {
 
 #akar h2 strong,
 #contact strong,
-.caption p strong {
+.caption p strong,
+.content a,
+.inline-link {
+    color: #2a2a2a;
     border-bottom: solid 2px #a42102;
+}
+
+.inline-link:visited {
+    color: #777;
+}
+
+.inline-link:hover {
+    background: #a42102;
+    color: white;
 }
 
 #signup .btn {
@@ -813,6 +826,62 @@ textarea {
 #nyidstory {
     background: url('../img/nyidstory.jpg') center center no-repeat;
     background-size: cover;
+}
+
+
+/* RESOURCES */
+
+#miss-home {
+    background: #eee;
+}
+
+.resources-section h3 {
+    font-size: 30px;
+    background: #edb021;
+    display: inline;
+    padding: 10px 10px 0px 20px;
+}
+
+#pre-arrival {
+    background: url('../img/pre-arrival.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#transport {
+    background: url('../img/taxi.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#housing {
+    background: url('../img/housing.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#indojava {
+    background: url('../img/indojava.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#upijaya {
+    background: url('../img/upijaya.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#skycafe {
+    background: url('../img/skycafe.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.content {
+    padding: 20px 20px 0 0;
+}
+
+.content a {
+    color: #2a2a2a;
+}
+
+.content strong {
+    background: #edb021;
 }
 
 ​
