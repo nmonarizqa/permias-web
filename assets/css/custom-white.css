@@ -140,6 +140,16 @@ img {
     height: 430px;
 }
 
+.thumbnail.right-caption>img {
+    float: left;
+    width: 100%;
+}
+
+.thumbnail.right-caption {
+    float: left;
+    height: 90px;
+}
+
 .badge.social {
     background: #ccc;
     font-size: 24px;
@@ -545,7 +555,7 @@ i.ci {
 }
 
 .members {
-    padding: 15px
+    padding: 10px
 }
 
 .members h4 {
@@ -907,6 +917,9 @@ textarea {
         background: rgba(20, 20, 20, 0.8);
         border-bottom: 1px solid transparent;
     }
+    .members {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width:568px) {
@@ -917,5 +930,11 @@ textarea {
     }
     #instructor .num span {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width:492px) {
+    .members {
+        width: 100%;
     }
 }
