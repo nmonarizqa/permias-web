@@ -424,7 +424,7 @@ section h3 {
 #akar h2 strong,
 #contact strong,
 .caption p strong,
-.content a,
+.content-resources a,
 .inline-link {
     color: #2a2a2a;
     border-bottom: solid 2px #a42102;
@@ -872,15 +872,15 @@ textarea {
     background-size: cover;
 }
 
-.content {
-    padding: 20px 20px 0 0;
+.content-resources {
+    padding: 20px 20px 20px 0;
 }
 
-.content a {
+.content-resources a {
     color: #2a2a2a;
 }
 
-.content strong {
+.content-resources strong {
     background: #edb021;
 }
 
